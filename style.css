@@ -14,55 +14,58 @@ body {
 
 .bitcoin-card {
   background: rgba(255, 255, 255, 0.1);
-  border-radius: 25px;
-  padding: 50px;
+  border-radius: 20px;
+  padding: 30px 40px;
   text-align: center;
   color: #fff;
   font-weight: bold;
-  font-size: 2rem;
-  backdrop-filter: blur(15px) saturate(180%);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  font-size: 1.5rem;
+  backdrop-filter: blur(12px) saturate(180%);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.2);
   transition: transform 0.5s ease, box-shadow 0.5s ease;
+  width: 350px;
 }
 
 .bitcoin-card:hover {
-  transform: rotateY(15deg) rotateX(10deg) scale(1.05);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  transform: rotateY(12deg) rotateX(8deg) scale(1.03);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.4);
 }
 
 .btc-logo {
-  width: 60px;
-  height: 60px;
-  margin-bottom: 20px;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
 }
 
 #btc-price {
-  font-size: 2.5rem;
+  font-size: 2rem;
   animation: pulse 2s infinite;
 }
 
 @keyframes pulse {
   0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.1); }
+  50% { transform: scale(1.05); }
 }
 
 .chart-options {
   display: flex;
-  gap: 10px;
+  flex-wrap: wrap;
+  gap: 6px;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .chart-options button {
-  padding: 5px 12px;
-  border-radius: 10px;
+  padding: 4px 10px;
+  border-radius: 8px;
   border: none;
   background: rgba(255,255,255,0.15);
   color: #fff;
   font-weight: bold;
   cursor: pointer;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(8px);
   transition: 0.3s;
+  font-size: 0.9rem;
 }
 
 .chart-options button:hover {
