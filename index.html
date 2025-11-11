@@ -10,10 +10,16 @@
 <body>
   <div class="container">
     <div class="bitcoin-card">
-      <img src="btc-logo.png" alt="Bitcoin Logo" class="btc-logo">
+      <!-- SVG Bitcoin Logo -->
+      <svg class="btc-logo" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="16" cy="16" r="16" fill="gold"/>
+        <text x="16" y="21" text-anchor="middle" font-size="16" font-family="Arial" font-weight="bold" fill="white">₿</text>
+      </svg>
+      
       <h1>Bitcoin Price</h1>
       <p id="btc-price">$0.00</p>
-      <canvas id="btcChart" width="400" height="200"></canvas>
+
+      <canvas id="btcChart" width="400" height="150"></canvas>
       <div class="chart-options">
         <button onclick="updateChart('1h')">1H</button>
         <button onclick="updateChart('1d')">1D</button>
