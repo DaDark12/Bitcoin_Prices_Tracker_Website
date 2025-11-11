@@ -5,12 +5,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bitcoin Tracker</title>
 <link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
   <div class="container">
     <div class="bitcoin-card">
+      <img src="btc-logo.png" alt="Bitcoin Logo" class="btc-logo">
       <h1>Bitcoin Price</h1>
       <p id="btc-price">$0.00</p>
+      <canvas id="btcChart" width="400" height="200"></canvas>
+      <div class="chart-options">
+        <button onclick="updateChart('1h')">1H</button>
+        <button onclick="updateChart('1d')">1D</button>
+        <button onclick="updateChart('1w')">1W</button>
+        <button onclick="updateChart('2w')">2W</button>
+        <button onclick="updateChart('1m')">1M</button>
+        <button onclick="updateChart('1y')">1Y</button>
+        <button onclick="updateChart('5y')">5Y</button>
+        <button onclick="updateChart('all')">All</button>
+      </div>
     </div>
   </div>
   <script src="script.js"></script>
