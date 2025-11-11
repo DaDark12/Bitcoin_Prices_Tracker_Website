@@ -1,0 +1,42 @@
+/* style.css */
+body {
+  background: linear-gradient(135deg, #2a003e, #7000ff, #ff3f8b);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+  overflow: hidden;
+}
+
+.container {
+  perspective: 1000px;
+}
+
+.bitcoin-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 25px;
+  padding: 50px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 2rem;
+  backdrop-filter: blur(15px) saturate(180%);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.bitcoin-card:hover {
+  transform: rotateY(15deg) rotateX(10deg) scale(1.05);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+#btc-price {
+  font-size: 2.5rem;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
